@@ -226,7 +226,7 @@ services:
 
     #Video recording
     jibri:
-        image: jitsi/jvb:latest
+        image: jitsi/jibri:latest
         restart: ${RESTART_POLICY}
         volumes:
             - ${CONFIG}/jibri:/config:Z
