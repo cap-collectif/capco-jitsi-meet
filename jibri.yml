@@ -6,6 +6,7 @@ services:
         restart: ${RESTART_POLICY}
         volumes:
             - ${CONFIG}/jibri:/config:Z
+            - ${CONFIG}/s3cmd:/home/jibri
             - /dev/shm:/dev/shm
         cap_add:
             - SYS_ADMIN
